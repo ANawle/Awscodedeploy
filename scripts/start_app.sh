@@ -1,6 +1,6 @@
 #!/usr/bin/bash 
 
-sed -i 's/\[]/\["Your_Instance_Public_IP"]/' /home/ubuntu/Aviawscodedeploy-master/mysite/settings.py
+sed -i 's/\[]/\[44.211.226.13]/' /home/ubuntu/Aviawscodedeploy-master/mysite/settings.py
 
 python manage.py migrate 
 # python manage.py makemigrations     
