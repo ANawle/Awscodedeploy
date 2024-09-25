@@ -7,10 +7,10 @@ After=network.target
 User=ubuntu
 Group=www-data
 WorkingDirectory=/home/ubuntu/Aviawscodedeploy-master
-ExecStart=/home/ubuntu/Aviawscodedeploy-master/venv/bin/gunicorn \
+ExecStart=/home/ubuntu/venv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
-          --bind unix:/run/gunicorn.sock \
-          mysite.wsgi:application
+          --bind unix:home/ubuntu/Aviawscodedeploy-master/blog/blog.sock blog.
+          wsgi:application
 [Install]
 WantedBy=multi-user.target
