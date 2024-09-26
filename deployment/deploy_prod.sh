@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ssh root@44.211.226.13 <<EOF
-  cd blogprojectdrf
+  cd home/ubuntu/Aviawscodedeploy-master
   git pull 
   source env/bin/activate
   ./manage.py migrate
